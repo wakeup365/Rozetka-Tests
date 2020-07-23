@@ -1,0 +1,1 @@
+while sleep 20; do date +%X; done
