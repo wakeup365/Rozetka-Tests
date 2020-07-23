@@ -1,0 +1,15 @@
+{
+  "name": "rozetka",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "testcafe chrome  ./tests.js"
+  },
+  "author": "Vitaly Levchenko wlevchenko3007@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "test": "^0.6.0",
+    "testcafe": "^1.8.8"
+  }
+}
