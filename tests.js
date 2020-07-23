@@ -2,14 +2,8 @@ import { Selector } from "testcafe";
 
 fixture`Find element with text`.page("https://rozetka.ua");
 
-test("Check an element's in a page", async (t) => {
-  //   const selector = Selector("meta").withText("Доставка по всей Украине").exists;
-  //   await t.expect(selector).ok();
-//   const submitButtonExists = Selector("a").withText(
-//     " войдите в личный кабинет "
-//   ).exists;
+test("Check if element's in a page", async (t) => {
+  const element = Selector("*").withText("Доставка по всей Украине");
 
-//   await t.expect(submitButtonExists).ok();
-  const element = Selector("meta").withText("Доставка по всей Украине").exists;
-    await t.expect(element).ok();
+  await t.expect(element.exists).ok();
 });
